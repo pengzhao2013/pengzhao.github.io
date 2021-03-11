@@ -6,22 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>1-5 Java环境搭建 | Hexo</title>
+  <title>Hexo+github博客从建立到自定义域名和https支持 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JDK： Java开发工具包  JDK&#x3D;JRE+Java开发工具  JRE&#x3D;JVM（Java虚拟机）+Java核心类库">
+  <meta name="description" content="Hexo博客从建立到https协议域名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1-5 Java环境搭建">
-<meta property="og:url" content="http://example.com/2021/03/10/1-5-Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:title" content="Hexo+github博客从建立到自定义域名和https支持">
+<meta property="og:url" content="http://example.com/2021/03/11/Hexo-github%E5%8D%9A%E5%AE%A2%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%92%8Chttps%E6%94%AF%E6%8C%81/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JDK： Java开发工具包  JDK&#x3D;JRE+Java开发工具  JRE&#x3D;JVM（Java虚拟机）+Java核心类库">
+<meta property="og:description" content="Hexo博客从建立到https协议域名">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2021/03/11/b2RJUXDBgdQ513w.png">
-<meta property="og:image" content="https://i.loli.net/2021/03/11/9kHWVRhbfGl6nq5.png">
-<meta property="article:published_time" content="2021-03-10T13:37:24.000Z">
-<meta property="article:modified_time" content="2021-03-11T01:01:27.527Z">
+<meta property="article:published_time" content="2021-03-11T08:36:38.000Z">
+<meta property="article:modified_time" content="2021-03-11T09:33:27.054Z">
 <meta property="article:author" content="pengzhao2013">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/03/11/b2RJUXDBgdQ513w.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -170,14 +167,14 @@
           </div>
           <div id="js-content" class="content-ll">
             
-<article id="post-1-5-Java环境搭建" class="article article-type-post " itemscope itemprop="blogPost">
+<article id="post-Hexo-github博客从建立到自定义域名和https支持" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      1-5 Java环境搭建
+      Hexo+github博客从建立到自定义域名和https支持
     </h1>
   
 
@@ -193,8 +190,8 @@
 
 <!--显示阅读次数完毕-->
         
-        <a href="/2021/03/10/1-5-Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2021-03-10T13:37:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-10</time>
+        <a href="/2021/03/11/Hexo-github%E5%8D%9A%E5%AE%A2%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%92%8Chttps%E6%94%AF%E6%8C%81/" class="archive-article-date">
+  	<time datetime="2021-03-11T08:36:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-11</time>
 </a>
 
 	<!-- 不蒜子统计 -->
@@ -205,13 +202,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>JDK： Java开发工具包 </p>
-<p>JDK=JRE+Java开发工具 </p>
-<p>JRE=JVM（Java虚拟机）+Java核心类库 </p>
-<span id="more"></span>
-
-<p><img src="https://i.loli.net/2021/03/11/b2RJUXDBgdQ513w.png" alt="JDK.PNG"> </p>
-<p><img src="https://i.loli.net/2021/03/11/9kHWVRhbfGl6nq5.png" alt="JDKSHK.PNG">  </p>
+        <h1 id="Hexo博客从建立到https协议域名"><a href="#Hexo博客从建立到https协议域名" class="headerlink" title="Hexo博客从建立到https协议域名"></a>Hexo博客从建立到https协议域名</h1><span id="more"></span> 
+<p>今天我的博客终于支持https协议了！其间查找了无数资料，有很多是没有解决问题的，现在就把我一路走来搜索到的每步的教程记录下来。</p>
+<h1 id="0-我是怎么想到建立个人博客的？"><a href="#0-我是怎么想到建立个人博客的？" class="headerlink" title="0.我是怎么想到建立个人博客的？"></a>0.我是怎么想到建立个人博客的？</h1><p>嗯，这是个问题，，，<br>首先我在看尚硅谷Java基础教程时宋红康老师一开课建议我们建立个人博客，把自己的学习过程记录下来，方便别人，也方便自己。当时不以为意，2021 年研三寒假写大论文的时候有时间看了一下b站，codesheep这位up主成果颇丰，这位学长本科通信专业保研华科，硕士方向类似于图像识别，研一刚开始跟着师姐做项目，看不懂师姐的代码，一行一行地读下来的。学长推荐了很多书籍以及一些个人编程的经验，是我的榜样。（内心OS：希望我也能达到学长的 水平）。学长有一个视频介绍了利用Hexo框架搭建个人博客部署到Github远端服务器上，这最起码有一个最基础的博客框架了。</p>
+<p>但是学长的操作基于mac系统，对于完全零基础的小白看的一顿操作猛如虎，于是我又找了其他up主的视频，基本上很多都是不敢跟着照做的。我找到了up主“CoolPlayer-函博” ，他应该是一名大学生，开头介绍了跟着codesheep视频评论区里出现的各种问题，完全零基础一步一步操作，从建立Hexo博客，部署到github远端，到使用yilia主题，各种页面设置如添加昵称、头像、目录、背景音乐等等。并且把整个操作过程分成几个视频，每个视频几分钟到十几分钟不等，很有成就感。当然，在建立Hexo博客过程中一些原理并没有讲，只是直接把代码贴出来让我们照做，并且没有给出更改域名、支持https，这算是鸡蛋里挑骨头吧。 </p>
+<h1 id="1-博客建立"><a href="#1-博客建立" class="headerlink" title="1.博客建立"></a>1.博客建立</h1><p>首先是b站up主codesheep（真名王帅，华科一位学长）使用苹果系统演示如何建立hexo博客部署到github远程服务器上，但是有很多知识默认我们已经知道的，比如命令行方式建立文件、进入文件目录等等，并且有很多步骤没有讲解得很清楚，直接敲完代码完事。后面学长还打算把其他建立博客的方式都演示一遍，比如WordPress建立动态博客。</p>
+<p>视频链接：1）.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=15011524454630734353">CodeSheep</a> </p>
+<p>2）.<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pt411K7o9">CoolPlayer-函博</a> </p>
+<h1 id="2-更改域名"><a href="#2-更改域名" class="headerlink" title="2.更改域名"></a>2.更改域名</h1><p>参见简书zedxpp <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/23b9e095c7c9">为你的hexo博客配置个性域名</a></p>
+<p>通过在阿里云购买域名实现将购买的xxxx.cn、xxxx.com、xxxx. xxxx.top、xxxx.tech等域名解析到建立的xxxx.github.io博客网址，从而实现个性定制域名。 </p>
+<p>但此种方法更改的域名浏览器登录会提示不安全，为http协议。</p>
+<h1 id="3-使博客网址支持https协议"><a href="#3-使博客网址支持https协议" class="headerlink" title="3. 使博客网址支持https协议"></a>3. 使博客网址支持https协议</h1><p>开通域名并提交个人资料后第二天阿里云就会审核通过，但是工作人员还会点击网址查看有没有非法信息，工作人员给我打电话，告诉我服务器在国外所以不用备案，但是要想http变成https协议需要下载SSL根证书。  </p>
+<p>我按网上操作，却止步于下载根证书后的安装步骤。 原来Hexo博客部署在国外服务器，不能采用这种方法。 同时更改.github.io域名为.cn或其他域名后不能在github网站中仓库的settings中开启enforce https。 </p>
+<p>于是在知乎上看到教程，其实我寒假看到过这个教程，用cloudflare代替阿里云进行域名解析，因为当时觉着复杂就没有操作。<br>今天照着做就成功了。 </p>
+<p>附上教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/76952407">知乎TRHX</a></p>
+<p>PS：github、cloudflare等国外网址都不容易打开，可以使用手机热点：）</p>
+<h1 id="4-Hexo博客如何上传本地图片"><a href="#4-Hexo博客如何上传本地图片" class="headerlink" title="4.Hexo博客如何上传本地图片"></a>4.Hexo博客如何上传本地图片</h1><p>我查到教程很多设置相对引用路径，但是失败了，在source里面的public建立一个名为images的文件夹，然后把图片拖进去，在本地.md博客文档中引用该图片也可以，但是我比较倾向于使用图床，有免注册的图床网站，拖动图片到网站可以自动生成可引用的链接，使用链接形式插入图片。<br>失败的弯路：<a target="_blank" rel="noopener" href="https://blog.csdn.net/hqweay/article/details/80847495">未成功</a><br>附上教程：<a target="_blank" rel="noopener" href="https://esbi.com.cn/2019/01/18/Hexo%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">哈哈哈的博客</a> </p>
+<p>免注册图床网址：<br><a target="_blank" rel="noopener" href="https://sm.ms/">免注册图床</a></p>
 
       
 
@@ -301,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://pengzhao2013.github.io/021/03/10/1-5-Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://pengzhao2013.github.io/021/03/11/Hexo-github%E5%8D%9A%E5%AE%A2%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%92%8Chttps%E6%94%AF%E6%8C%81/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -315,18 +322,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/03/11/Hexo-github%E5%8D%9A%E5%AE%A2%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%92%8Chttps%E6%94%AF%E6%8C%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hexo+github博客从建立到自定义域名和https支持
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/03/01/4-Java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">4.Java基础-常用的命令行指令</div>
+    <a href="/2021/03/10/1-5-Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1-5 Java环境搭建</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -353,7 +351,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E4%BB%8E%E5%BB%BA%E7%AB%8B%E5%88%B0https%E5%8D%8F%E8%AE%AE%E5%9F%9F%E5%90%8D"><span class="toc-number">1.</span> <span class="toc-text">Hexo博客从建立到https协议域名</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E6%83%B3%E5%88%B0%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">0.我是怎么想到建立个人博客的？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B"><span class="toc-number">3.</span> <span class="toc-text">1.博客建立</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%9B%B4%E6%94%B9%E5%9F%9F%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text">2.更改域名</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E4%BD%BF%E5%8D%9A%E5%AE%A2%E7%BD%91%E5%9D%80%E6%94%AF%E6%8C%81https%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.</span> <span class="toc-text">3. 使博客网址支持https协议</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87"><span class="toc-number">6.</span> <span class="toc-text">4.Hexo博客如何上传本地图片</span></a></li></ol>
                     </div>
                 </span>
             </div>
