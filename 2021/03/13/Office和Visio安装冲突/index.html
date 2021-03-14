@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://i.loli.net/2021/03/14/auE27NYHgn4JQjB.png">
 <meta property="og:image" content="https://i.loli.net/2021/03/14/2ORkboWxypNmTC9.png">
 <meta property="article:published_time" content="2021-03-13T11:58:58.000Z">
-<meta property="article:modified_time" content="2021-03-14T00:11:42.032Z">
+<meta property="article:modified_time" content="2021-03-14T00:16:28.755Z">
 <meta property="article:author" content="pengzhao2013">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/03/14/o2lIievZRyxt8fu.png">
@@ -214,10 +214,16 @@
 <p>事情的起因是我用office2010版本打开师兄的论文却发现公式排版不对，同学打开却正常<br>于是到学校网络与信息中心官网安装了学校提供的Office2016正版软件，但是之后安装学校提供<br>的Visio2019正版软件却提示 “本即点即用版本（click-to-run）与安装版本（Windows Installer）的Office”不能同时安装<br><img src="https://i.loli.net/2021/03/14/o2lIievZRyxt8fu.png" alt="22.PNG"> （图片来自网络，侵删）<br>原来Office版本和Visio版本必须要么都是即点即用版本（click and run）要么都是安装版本（windows installer）<br>学校网络与信息中心正版安装版本Office:<br><img src="https://i.loli.net/2021/03/13/AUT4h8yB1CbcN7V.png" alt="1.PNG"><br>此office为installer版本，而信息化中心的Visio 2019是即点即用版本 不兼容<br>最后发现Visio没有installer版本的，只能安装offcie 即点即用版本的 </p>
 <h1 id="怎么判断是即点即用-installer版本"><a href="#怎么判断是即点即用-installer版本" class="headerlink" title="怎么判断是即点即用/installer版本"></a>怎么判断是即点即用/installer版本</h1><blockquote>
 <ol>
-<li>看文件目录<br>即点即用版在解压以后，setup文件旁边会有一个文件夹，并且直接有32/64位的文件（不一定两个都同时存在），<br>比如data文件夹，里面藏着安装需要的文件。<br><img src="https://i.loli.net/2021/03/14/XCBpvTnYle462q9.png" alt="33.PNG"><br>Windows Installer版则是32位程序和64位程序分开，下载的是32位就是32位，64位就是64位，不存在共用同一个data<br>文件夹，并且，setup文件和数据文件在同一个目录下。 </li>
-<li>看镜像文件名称<br>前缀为cn或en的为即点即用版本<br>前缀为SW的为Windows Installer版本 </li>
+<li>看文件目录 </li>
 </ol>
 </blockquote>
+<p>即点即用版在解压以后，setup文件旁边会有一个文件夹，并且直接有32/64位的文件（不一定两个都同时存在），<br>比如data文件夹，里面藏着安装需要的文件。<br><img src="https://i.loli.net/2021/03/14/XCBpvTnYle462q9.png" alt="33.PNG"><br>Windows Installer版则是32位程序和64位程序分开，下载的是32位就是32位，64位就是64位，不存在共用同一个data<br>文件夹，并且，setup文件和数据文件在同一个目录下。 </p>
+<blockquote>
+<ol start="2">
+<li>看镜像文件名称 </li>
+</ol>
+</blockquote>
+<p>前缀为cn或en的为即点即用版本<br>前缀为SW的为Windows Installer版本 </p>
 <blockquote>
 <ol start="3">
 <li>看安装过程 </li>
