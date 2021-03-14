@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://i.loli.net/2021/03/14/auE27NYHgn4JQjB.png">
 <meta property="og:image" content="https://i.loli.net/2021/03/14/2ORkboWxypNmTC9.png">
 <meta property="article:published_time" content="2021-03-13T11:58:58.000Z">
-<meta property="article:modified_time" content="2021-03-14T00:07:20.907Z">
+<meta property="article:modified_time" content="2021-03-14T00:11:42.032Z">
 <meta property="article:author" content="pengzhao2013">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/03/14/o2lIievZRyxt8fu.png">
@@ -211,54 +211,32 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="学校正版Office与Visio无法同时安装问题"><a href="#学校正版Office与Visio无法同时安装问题" class="headerlink" title="学校正版Office与Visio无法同时安装问题"></a>学校正版Office与Visio无法同时安装问题</h1><span id="more"></span>
-<p>事情的起因是我用office2010版本打开师兄的论文却发现公式排版不对，同学打开却正常 </p>
-<p>于是到学校网络与信息中心官网安装了学校提供的Office2016正版软件，但是之后安装学校提供</p>
-<p>的Visio2019正版软件却提示 “本即点即用版本（click-to-run）与安装版本（Windows Installer）的Office”不能同时安装 </p>
-<p><img src="https://i.loli.net/2021/03/14/o2lIievZRyxt8fu.png" alt="22.PNG"> （图片来自网络，侵删）</p>
-<p>原来Office版本和Visio版本必须要么都是即时即用版本（click and run）要么都是安装版本（windows installer）</p>
-<p>学校网络与信息中心正版安装版本Office: </p>
-<p><img src="https://i.loli.net/2021/03/13/AUT4h8yB1CbcN7V.png" alt="1.PNG"> </p>
-<p>此office为installer版本，而信息化中心的Visio 2019是即点即用版本 不兼容 </p>
-<p>最后发现Visio没有installer版本的，只能安装offcie 即点即用版本的 </p>
-<h1 id="怎么判断是即点即用-installer版本"><a href="#怎么判断是即点即用-installer版本" class="headerlink" title="怎么判断是即点即用/installer版本"></a>怎么判断是即点即用/installer版本</h1><ol>
-<li>看文件目录 </li>
+<p>事情的起因是我用office2010版本打开师兄的论文却发现公式排版不对，同学打开却正常<br>于是到学校网络与信息中心官网安装了学校提供的Office2016正版软件，但是之后安装学校提供<br>的Visio2019正版软件却提示 “本即点即用版本（click-to-run）与安装版本（Windows Installer）的Office”不能同时安装<br><img src="https://i.loli.net/2021/03/14/o2lIievZRyxt8fu.png" alt="22.PNG"> （图片来自网络，侵删）<br>原来Office版本和Visio版本必须要么都是即点即用版本（click and run）要么都是安装版本（windows installer）<br>学校网络与信息中心正版安装版本Office:<br><img src="https://i.loli.net/2021/03/13/AUT4h8yB1CbcN7V.png" alt="1.PNG"><br>此office为installer版本，而信息化中心的Visio 2019是即点即用版本 不兼容<br>最后发现Visio没有installer版本的，只能安装offcie 即点即用版本的 </p>
+<h1 id="怎么判断是即点即用-installer版本"><a href="#怎么判断是即点即用-installer版本" class="headerlink" title="怎么判断是即点即用/installer版本"></a>怎么判断是即点即用/installer版本</h1><blockquote>
+<ol>
+<li>看文件目录<br>即点即用版在解压以后，setup文件旁边会有一个文件夹，并且直接有32/64位的文件（不一定两个都同时存在），<br>比如data文件夹，里面藏着安装需要的文件。<br><img src="https://i.loli.net/2021/03/14/XCBpvTnYle462q9.png" alt="33.PNG"><br>Windows Installer版则是32位程序和64位程序分开，下载的是32位就是32位，64位就是64位，不存在共用同一个data<br>文件夹，并且，setup文件和数据文件在同一个目录下。 </li>
+<li>看镜像文件名称<br>前缀为cn或en的为即点即用版本<br>前缀为SW的为Windows Installer版本 </li>
 </ol>
-<p>即点即用版在解压以后，setup文件旁边会有一个文件夹，并且直接有32/64位的文件（不一定两个都同时存在）， </p>
-<p>比如data文件夹，里面藏着安装需要的文件。 </p>
-<p><img src="https://i.loli.net/2021/03/14/XCBpvTnYle462q9.png" alt="33.PNG"> </p>
-<p>Windows Installer版则是32位程序和64位程序分开，下载的是32位就是32位，64位就是64位，不存在共用同一个data </p>
-<p>文件夹，并且，setup文件和数据文件在同一个目录下。<br>2. 看镜像文件名称<br>前缀为cn或en的为即点即用版本 </p>
-<p>前缀为SW的为Windows Installer版本 </p>
+</blockquote>
+<blockquote>
 <ol start="3">
 <li>看安装过程 </li>
 </ol>
-<p>即点即用版在安装时，没有选项，双击安装以后直接就出现了类似于如下的安装界面，不可以选择安装哪些组件、也不可以选择安装路径。</p>
-<p><img src="https://i.loli.net/2021/03/14/c2RHQ4tkYzSObiP.png" alt="44.PNG"> </p>
-<p>Windows Installer版则需要同意许可协议、可以选择安装路径、可以选择安装哪些组件。</p>
-<p><img src="https://i.loli.net/2021/03/14/93YmtprqdNxsjyz.png" alt="55.PNG"> </p>
+</blockquote>
+<p>即点即用版在安装时，没有选项，双击安装以后直接就出现了类似于如下的安装界面，不可以选择安装哪些组件、也不可以选择安装路径。<br><img src="https://i.loli.net/2021/03/14/c2RHQ4tkYzSObiP.png" alt="44.PNG"><br>Windows Installer版则需要同意许可协议、可以选择安装路径、可以选择安装哪些组件。<br><img src="https://i.loli.net/2021/03/14/93YmtprqdNxsjyz.png" alt="55.PNG"> </p>
+<blockquote>
 <ol start="4">
 <li>看安装界面 </li>
 </ol>
-<p>从程序的安装以及卸载界面也可以进行区分，两者风格有很明显的区别。</p>
-<p>即点即用版在安装卸载时，界面简单，并且没有标题栏，右上角只有简单的x或者最小化的按钮。 </p>
-<p>Windows Installer版则在安装卸载时，界面大小统一、且都有点击之后会变色的标题栏。</p>
-<p>详细请见<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzUxMDkwMjI3NQ==&mid=2247488389&idx=1&sn=bce1a9a1a631ecb15fe0ee6437ceb1c7&scene=21#wechat_redirect">Office 避坑指南</a> </p>
-<p><img src="https://i.loli.net/2021/03/14/auE27NYHgn4JQjB.png" alt="66.PNG"> </p>
-<h1 id="如何解决"><a href="#如何解决" class="headerlink" title="如何解决"></a>如何解决</h1><p>很简单，安装统一就可以了 不管目前使用了哪个版本，要么在程序中卸载当前版本（课代表分享过三款程序卸载工具，可以搜索使用进行卸载），安装准备好的 </p>
-<p>新版本，要么去下载想要安装软件的另一个版本。 </p>
-<p>总之，统一为即点即用版本或者Windows Installer版本就可以了。 </p>
+</blockquote>
+<p>从程序的安装以及卸载界面也可以进行区分，两者风格有很明显的区别。<br>即点即用版在安装卸载时，界面简单，并且没有标题栏，右上角只有简单的x或者最小化的按钮。<br>Windows Installer版则在安装卸载时，界面大小统一、且都有点击之后会变色的标题栏。<br>详细请见<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzUxMDkwMjI3NQ==&mid=2247488389&idx=1&sn=bce1a9a1a631ecb15fe0ee6437ceb1c7&scene=21#wechat_redirect">Office 避坑指南</a><br><img src="https://i.loli.net/2021/03/14/auE27NYHgn4JQjB.png" alt="66.PNG"> </p>
+<h1 id="如何解决"><a href="#如何解决" class="headerlink" title="如何解决"></a>如何解决</h1><p>很简单，安装统一就可以了 不管目前使用了哪个版本，要么在程序中卸载当前版本（课代表分享过三款程序卸载工具，可以搜索使用进行卸载），安装准备好的<br>新版本，要么去下载想要安装软件的另一个版本。<br>总之，统一为即点即用版本或者Windows Installer版本就可以了。 </p>
 <h1 id="加餐-什么是即点即用"><a href="#加餐-什么是即点即用" class="headerlink" title="加餐 什么是即点即用"></a>加餐 什么是即点即用</h1><p><img src="https://i.loli.net/2021/03/14/2ORkboWxypNmTC9.png" alt="77.PNG"> </p>
 <h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ol>
-<li><p><a target="_blank" rel="noopener" href="https://weixin.sogou.com/weixin?p=01030402&query=visio2016%E5%8D%B3%E7%82%B9%E5%8D%B3%E7%94%A8%E7%89%88&type=2&ie=utf8">搜狗微信搜索</a> </p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://wjrsbu.smartapps.cn/zhihu/answer?id=1517554690&isShared=1&hostname=baiduboxapp&_swebfr=1">知乎-即点即用原理</a> </p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Jacinth40/article/details/79895241">CSDN-关于office”即点即用”安装心得</a> </p>
-</li>
+<li><a target="_blank" rel="noopener" href="https://weixin.sogou.com/weixin?p=01030402&query=visio2016%E5%8D%B3%E7%82%B9%E5%8D%B3%E7%94%A8%E7%89%88&type=2&ie=utf8">搜狗微信搜索</a> </li>
+<li><a target="_blank" rel="noopener" href="https://wjrsbu.smartapps.cn/zhihu/answer?id=1517554690&isShared=1&hostname=baiduboxapp&_swebfr=1">知乎-即点即用原理</a> </li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Jacinth40/article/details/79895241">CSDN-关于office”即点即用”安装心得</a> <h1 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h1>幸亏我有强迫症去安装了学校提供的正版SW版本Office2016，与学校提供的即点即用版本Visio2019冲突，然后我就这样发现了这个问题。<br>这个和科研一样，都是发现问题-解决问题，虽然浪费了很多时间，但是收获了很多知识。<br>感谢无数网络上的知识分享者！ </li>
 </ol>
-<h1 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h1><p>幸亏我有强迫症去安装了学校提供的正版SW版本Office2016，与学校提供的即点即用版本Visio2019冲突，然后我就这样发现了这个问题。</p>
-<p>这个和科研一样，都是发现问题-解决问题，虽然浪费了很多时间，但是收获了很多知识。 </p>
-<p>感谢无数网络上的知识分享者！ </p>
 
       
 
