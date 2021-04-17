@@ -22,11 +22,11 @@
 <meta property="og:image" content="https://i.loli.net/2021/04/17/Wyg83iqr2SJPdsN.jpg">
 <meta property="og:image" content="https://i.loli.net/2021/04/17/KDzBhMajg2yrc8b.jpg">
 <meta property="og:image" content="https://i.loli.net/2021/04/17/7C19zI5cPu4tvSk.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/17/AsViEg5tZJF74eO.png">
+<meta property="og:image" content="https://i.loli.net/2021/04/17/3gUui4L8tPpJOMA.png">
 <meta property="og:image" content="https://i.loli.net/2021/04/17/ukCFPSpqlRnsW8f.png">
 <meta property="og:image" content="https://i.loli.net/2021/04/17/TAXSntJkd7UKaVq.png">
 <meta property="article:published_time" content="2021-04-17T08:09:41.000Z">
-<meta property="article:modified_time" content="2021-04-17T08:49:35.991Z">
+<meta property="article:modified_time" content="2021-04-17T08:58:55.713Z">
 <meta property="article:author" content="pengzhao2013">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/04/17/BxmeY9yqiNMGQ5T.jpg">
@@ -219,16 +219,14 @@
 <li>Google无法自动更新问题 </li>
 </ol>
 </blockquote>
-<p>Google浏览器出90.0版本了，我来到设置-关于chrome中点击自动更新，结果提 </p>
-<p>示”错误代码:7，0x008…”</p>
+<p>Google浏览器出90.0版本了，我来到设置-关于chrome中点击自动更新，结果提示”错误代码:7，0x008…” </p>
 <p>百度一下，原来是系统限制了Chrome自动更新 </p>
 <p>这里附上百度到的网址 <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/e4511cf379b5d42b845eaf2b.html">Chrome更新出错</a> </p>
 <p>首先ctrl+shift+esc或右键点击任务栏的空白位置，然后在弹出菜单中选择“任务管理器”菜单项。在打开的任务管理器窗口中，依次点击“文件/运行新任务”菜单项。输入命令services.msc，点确定 </p>
 <p><img src="https://i.loli.net/2021/04/17/BxmeY9yqiNMGQ5T.jpg" alt="1.jpg"> </p>
 <p><img src="https://i.loli.net/2021/04/17/1rZgFfaldJmRD2o.jpg" alt="2.jpg"> </p>
 <p><img src="https://i.loli.net/2021/04/17/SeCTz7PmYWoDIan.jpg" alt="3.jpg"></p>
-<p>在服务列表中找到Google更新服务一项，然后右键点击该服务项，在弹出菜单中选择 </p>
-<p>“属性”菜单项。（一共有两个Google服务项，可随意先选择其中一个）。 </p>
+<p>在服务列表中找到Google更新服务一项，然后右键点击该服务项，在弹出菜单中选择<br>“属性”菜单项。（一共有两个Google服务项，可随意先选择其中一个）。 </p>
 <p><img src="https://i.loli.net/2021/04/17/CMmUsGHLV6a3bKy.jpg" alt="4.jpg"></p>
 <p>这时会打开Google更新服务窗口，在这里点击“启动类型”下拉菜单，在弹出菜单中选择“自动”菜单项。<br><img src="https://i.loli.net/2021/04/17/Wyg83iqr2SJPdsN.jpg" alt="6.jpg"> </p>
 <p>点击窗口中右下角的应用按钮后，再点击“启动”按钮，启动该服务的运行。（如果弹出无法启动也不用着急，可先点确定跳过，一会重新启动计算机后会自动 启动的）。<br><img src="https://i.loli.net/2021/04/17/KDzBhMajg2yrc8b.jpg" alt="7.jpg"> </p>
@@ -240,18 +238,16 @@
 <li>安装Git后右键Git Bash Here消失 </li>
 </ol>
 </blockquote>
-<p>可能前段时间安装学校免费正版Adobe软件 删除了很多文件夹 导致Git Bash Here消失 </p>
+<p>可能前段时间安装学校免费正版Adobe软件删除了很多文件夹，导致Git Bash Here消失 </p>
 <p>首先百度如何使点击右键后出现Git Bash Here  </p>
 <p>先附上教程网址：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/wutaotaosin/articles/12092556.html">右键Git Bash Here不见了怎么办</a> </p>
-<p>我当时看这个教程只看到了一半，右键虽然出现了Git Bash Here，但是点击之后出 </p>
-<p>现错误提示：找不到该命令对应的应用程序，原来这个命令按钮需要链接到安装Git后 </p>
-<p>产生的Bash.exe程序。 </p>
+<p>我当时看这个教程只看到了一半，右键虽然出现了Git Bash Here，但是点击之后出现错误提示：找不到该命令对应的应用程序，原来这个命令按钮需要链接到安装Git后<br>产生的Bash.exe程序。 </p>
 <p>首先使右键先出现Git Bash Here按钮： </p>
 <p>第一步，window + R，输入regedit回车进入注册表 </p>
 <p>依次进入HKEY_CLASSES_ROOT —-》 Directory —-》Background —-》 shell<br>右键点击shell，选择新建，然后选择项，命名为 Git Bash Here，成功后进入桌面右键发现多了 Git Bash Here. </p>
 <p>添加图标：右键点击shell中你刚刚新建的这个项(Git Bash Here)，选择新建，然后选择字符串值，将名称设置为Icon； </p>
-<p>然后找一下你安装Git的文件夹，我是安装在了D盘，D:\Git\mingw64\share\git，按照这个路径进入到git文件夹，会发现里面有个git-for-windows.ico；然后将刚刚新建的字符串值的数据设置为D:\Git\mingw64\share\git\git-for-windows.ico；保存发现右键Git Bash Here中多了一个图标； </p>
-<p><img src="https://i.loli.net/2021/04/17/AsViEg5tZJF74eO.png" alt="9.png"> </p>
+<p>然后找一下你安装Git的文件夹，我是安装在了D盘，D:\Git\install\Git\mingw64\share\git，按照这个路径进入到git文件夹，会发现里面有个git-for-windows.ico；然后将刚刚新建的字符串值的数据设置为D:\Git\mingw64\share\git\git-for-windows.ico；保存发现右键Git Bash Here中多了一个图标； </p>
+<p><img src="https://i.loli.net/2021/04/17/3gUui4L8tPpJOMA.png" alt="9.png"></p>
 <p>接下来还差最后一步，在 Git Bash Here 下面新建一个项命名为command；将数据设置成 D:\Git\install\bin\bash.exe –login -i，这个也和你安装Git的路径有关，我是安装在了D盘； </p>
 <p><img src="https://i.loli.net/2021/04/17/ukCFPSpqlRnsW8f.png" alt="10.png"> </p>
 <p>这里附上另一个教程：<br><img src="https://i.loli.net/2021/04/17/TAXSntJkd7UKaVq.png" alt="11.png"> </p>
